@@ -1,0 +1,3 @@
+- `rapport.md` puis export PDF
+- `schemas/` : schémas Mermaid
+- `captures/` : captures du dashboard pour le rapport

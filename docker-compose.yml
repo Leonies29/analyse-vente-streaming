@@ -1,0 +1,7 @@
+# Kafka en un seul nœud (mode KRaft, sans Zookeeper)
+services:
+  kafka:
+    image: apache/kafka:3.7.0
+    container_name: kafka
+    ports:
+      - "9092:9092"

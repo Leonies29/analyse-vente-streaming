@@ -1,0 +1,25 @@
+# Données (trop lourdes pour GitHub : chacun les télécharge)
+data/raw/*
+data/processed/*
+!data/**/.gitkeep
+
+# Résultats et checkpoints Spark
+output/*
+!output/.gitkeep
+checkpoints/
+spark-warehouse/
+metastore_db/
+derby.log
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.ipynb_checkpoints/
+
+# Éditeurs / système
+.vscode/
+.idea/
+.DS_Store
