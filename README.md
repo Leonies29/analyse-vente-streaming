@@ -9,17 +9,21 @@ Prérequis : Python 3.10+, Java 17 (pour Spark), Docker.
 
 ```bash
 python -m venv .venv
-.venv/bin/activate       
+source .venv/bin/activate        # Windows : .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-Télécharger le dataset sur https://archive.ics.uci.edu/dataset/352/online+retail
-et placer `Online Retail.xlsx` dans `data/raw/` sous le nom `online_retail.xlsx`.
+Préparer les données (une seule fois) :
+```bash
+python -m scripts.download_data   # télécharge le dataset depuis l'UCI
+python -m producer.prepare_data   # nettoie et trie → data/processed/online_retail.csv
+```
+Guide détaillé et problèmes fréquents : `docs/installation.md`.
 
 ## Lancement (4 terminaux, depuis la racine)
 ```bash
 docker compose up -d                       # 1. Kafka
-python -m producer.producer                # 2. envoi des transactions
+python -m producer.producer                # 2. envoi des transactions (--rate, --limit)
 python -m streaming.job                    # 3. traitement Spark
 streamlit run dashboard/app.py             # 4. tableau de bord
 ```

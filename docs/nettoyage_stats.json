@@ -1,0 +1,18 @@
+{
+  "lignes_brutes": 541909,
+  "doublons_supprimes": 5268,
+  "sans_description": 1454,
+  "prix_nul_ou_negatif": 1058,
+  "codes_non_produits": 2893,
+  "quantite_negative_hors_annulation": 0,
+  "lignes_finales": 531236,
+  "dont_annulations": 8668,
+  "dont_sans_client": 131580,
+  "nb_factures": 23195,
+  "nb_produits": 3817,
+  "nb_pays": 38,
+  "periode": [
+    "2010-12-01 08:26:00",
+    "2011-12-09 12:50:00"
+  ]
+}

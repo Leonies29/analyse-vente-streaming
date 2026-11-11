@@ -1,6 +1,8 @@
 pyspark==3.5.1
-kafka-python==2.0.2
+kafka-python==2.2.15
 pandas
 openpyxl
 streamlit>=1.40
 plotly
+matplotlib
+jupyter
